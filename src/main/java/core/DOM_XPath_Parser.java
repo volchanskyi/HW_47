@@ -24,16 +24,13 @@ public class DOM_XPath_Parser {
 	String xpath_element_05 = "//merchants/merchant[1]/store-url";
 	String xpath_element_06 = "//merchants/merchant/phone";
 	String xpath_element_07 = "//deals/deal/bid";
-	String xpath_element_08 = "//deals/deal/sku";
+	String xpath_element_08 = "//phone[text()]";
 
 	String xpath_attribute_01 = "//deals/@count";
 	String xpath_attribute_02 = "//display-items/@count";
 	String xpath_attribute_03 = "//merchants/@count";
-	String xpath_attribute_04 = "//phone[text()]";
-	String xpath_attribute_05 = "//bid/@count";
-	String xpath_attribute_06 = "//sku/@count";
-	String xpath_attribute_07 = "//raw-bid/@count";
-	String xpath_attribute_08 = "//bid/@count";
+	String xpath_attribute_04 = "//products/@count";
+
 
 	// Get the DOM Builder Factory
 	DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
@@ -63,10 +60,7 @@ public class DOM_XPath_Parser {
 	String attribute_02 = xpath.compile(xpath_attribute_02).evaluate(document);
 	String attribute_03 = xpath.compile(xpath_attribute_03).evaluate(document);
 	String attribute_04 = xpath.compile(xpath_attribute_04).evaluate(document);
-	String attribute_05 = xpath.compile(xpath_attribute_05).evaluate(document);
-	String attribute_06 = xpath.compile(xpath_attribute_06).evaluate(document);
-	String attribute_07 = xpath.compile(xpath_attribute_07).evaluate(document);
-	String attribute_08 = xpath.compile(xpath_attribute_08).evaluate(document);
+
 
 	System.out.println(TestDataStorage.getTC()[0] + element_01);
 	System.out.println(TestDataStorage.getTC()[1] + element_02);
@@ -80,10 +74,7 @@ public class DOM_XPath_Parser {
 	System.out.println(TestDataStorage.getTC()[9] + attribute_02);
 	System.out.println(TestDataStorage.getTC()[10] + attribute_03);
 	System.out.println(TestDataStorage.getTC()[11] + attribute_04);
-	System.out.println(TestDataStorage.getTC()[12] + attribute_05);
-	System.out.println(TestDataStorage.getTC()[13] + attribute_06);
-	System.out.println(TestDataStorage.getTC()[14] + attribute_07);
-	System.out.println(TestDataStorage.getTC()[15] + attribute_08);
+
 	
 
     }

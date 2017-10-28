@@ -18,16 +18,16 @@ public class TestDataStorage {
 	return elemList;
     }
 
-    
     public static TreeMap<String, String> getElemlist() {
 	return elemList;
     }
-    
+
     public static String[] getTC() {
 	return tc;
     }
 
     private static String tc[] = { "Key Word: \t ", "Engine: \t ", "Version: \t ", "Response time: \t ",
-	    "Number of deals: ", "Store Url: \t ", "Merchant Phone:  ", "Amount of bids:  ", "Sku# \t\t ", "Displayed items: ", "Merchants: \t ", "Phones"  };
+	    "Number of deals: ", "Store Url: \t ", "Merchant Phone:  ", "Amount of bids:  ", "Phone \t\t ",
+	    "Displayed items: ", "Merchants: \t ", "Products: \t " };
 
 }
